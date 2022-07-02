@@ -14,12 +14,15 @@
         android:theme="@style/Theme.IntaOnline"
         tools:targetApi="31">
         <activity
+            android:name=".LoginScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:theme="@style/SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
