@@ -10,10 +10,10 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        val iv_go=findViewById<View>(R.id.iv_go)
-        iv_go.alpha= 0f
-        iv_go.animate().setDuration(2000).alpha(1f).withEndAction{
-            val oi =  Intent(this, MainActivity::class.java)
+        val ivgo=findViewById<View>(R.id.iv_go)
+        ivgo.alpha= 0f
+        ivgo.animate().setDuration(2000).alpha(1f).withEndAction{
+            val oi =  Intent(this, LoginScreenActivity::class.java)
             startActivity(oi)
             overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
             finish()
