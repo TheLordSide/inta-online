@@ -5,15 +5,15 @@
         <item name="colorPrimaryDark">@color/white</item>
         <item name="colorAccent">@color/white</item>
     </style>
-    
+
     <style name="LoginScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/design_default_color_primary</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
         <item name="colorAccent">@color/white</item>
     </style>
 
-    <style name="Title" parent="Theme.AppCompat.Light">
-        <item name="android:textSize">30sp</item>
+    <style name="Title" parent="Theme.Material3.Light">
+        <item name="android:textSize">40sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/purple_500</item>
     </style>

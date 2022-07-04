@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">inta online</string>
     <string name="Email">Email</string>
-    <string name="Requis">Requis</string>
+    <string name="Requis">Champs requis*</string>
     <string name="Mdp">Mot de passe</string>
     <string name="Title">Bienvenue</string>
     <string name="Login">Connexion</string>
