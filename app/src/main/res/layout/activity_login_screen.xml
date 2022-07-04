@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="40dp"
+    android:layout_marginTop="20dp"
     tools:context=".LoginScreenActivity">
 
     <TextView
@@ -20,7 +20,7 @@
     <include
         android:id="@+id/include"
         layout="@layout/linear_horizontal_login"
-      />
+       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
