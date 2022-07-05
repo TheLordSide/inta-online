@@ -16,7 +16,6 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.485">
@@ -25,7 +24,7 @@
         <ImageView
             android:id="@+id/logoView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:src="@drawable/logo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +34,10 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
             android:hint="@string/Email"
+            app:startIconTint="@color/purple_500"
+            app:endIconTint="@color/purple_500"
             app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
             app:helperText="@string/Requis"
             app:endIconMode="clear_text"
@@ -56,13 +57,16 @@
             android:layout_height="wrap_content"
             app:startIconDrawable="@drawable/ic_baseline_security_24"
             android:hint="@string/Mdp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            app:startIconTint="@color/purple_500"
+            app:endIconTint="@color/purple_500"
             app:helperText="@string/Requis"
             app:endIconMode="password_toggle"
             app:layout_constraintTop_toBottomOf="@id/UserName">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/userPass"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
 
@@ -73,10 +77,9 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
             android:text="@string/Login"
-            app:layout_constraintTop_toBottomOf="@id/PassWord"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintTop_toBottomOf="@id/PassWord" />
 
         <Button
             android:id="@+id/Inscription"
@@ -84,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Signup"
-            app:layout_constraintEnd_toEndOf="@id/Connexion"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Connexion" />
 
