@@ -1,5 +1,6 @@
 package tg.intaonline.intaonline
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -17,7 +18,8 @@ class LoginScreenActivity : AppCompatActivity() {
 
 
       connectbtn.setOnClickListener{
-        VerificationChamps()
+        val itent = Intent(this,MainActivity::class.java)
+          startActivity(itent)
       }
 
 
