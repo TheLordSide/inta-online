@@ -11,8 +11,7 @@
         android:layout_height="match_parent"
         android:id="@+id/ViewMenu"
         android:columnWidth="100dp"
-        android:layout_margin="20dp"
-        android:horizontalSpacing="15dp"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="15dp"/>
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

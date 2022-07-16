@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         gridView = findViewById(R.id.ViewMenu)
         arrayList = ArrayList()
         arrayList = setDataList()
@@ -26,14 +25,13 @@ class MainActivity : AppCompatActivity() {
         gridView?.adapter= adaptateurgrid
    }
 
-
     private fun setDataList() : ArrayList<LanguageItem>{
         var arrayList:ArrayList<LanguageItem> = ArrayList()
 
-        arrayList.add(LanguageItem(R.drawable.logo, name = "Acceuei"))
-        arrayList.add(LanguageItem(R.drawable.logo, name = "Acceuil"))
-
-
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_video_library_24, name = "Cours"))
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_category_24, name = "Categories"))
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_admin_panel_settings_24, name = "Profil"))
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_auto_stories_24, name = "Parcours"))
         return arrayList
     }
 
