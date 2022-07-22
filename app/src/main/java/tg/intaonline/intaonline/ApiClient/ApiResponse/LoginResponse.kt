@@ -1,4 +1,4 @@
-package tg.intaonline.intaonline.ApiClient.ApiRequest
+package tg.intaonline.intaonline.ApiClient.ApiResponse
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

@@ -1,6 +1,5 @@
 package tg.intaonline.intaonline
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -13,7 +12,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import tg.intaonline.intaonline.ApiClient.ApiInterface
 import tg.intaonline.intaonline.ApiClient.ApiRequest.LoginRequest
-import tg.intaonline.intaonline.ApiClient.ApiRequest.LoginResponse
+import tg.intaonline.intaonline.ApiClient.ApiResponse.LoginResponse
 import tg.intaonline.intaonline.ApiClient.service.ApiClient
 
 class LoginScreenActivity : AppCompatActivity() {
@@ -29,13 +28,13 @@ class LoginScreenActivity : AppCompatActivity() {
       connectbtn.setOnClickListener{
       //  val itent = Intent(this,MainActivity::class.java)
       //    startActivity(itent)
-          verificationChamps()
+          login()
       }
 
 
     }
 
-    private fun verificationChamps(){
+    private fun login(){
         var email = findViewById<EditText>(R.id.usermail)
         var pass = findViewById<EditText>(R.id.userPass)
         var errortext = findViewById<TextInputLayout>(R.id.UserName)
