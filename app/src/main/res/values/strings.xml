@@ -6,4 +6,5 @@
     <string name="Title">Bienvenue</string>
     <string name="Login">Connexion</string>
     <string name="Signup">Inscription</string>
+    <string name="Categorie">Nos catégories</string>
 </resources>

@@ -9,12 +9,18 @@
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2125" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_main_dialog_categories.xml" value="0.26375282592313487" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/grid_layout.xml" value="0.22" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/linear_horizontal_login.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/mainactivitygridview_items.xml" value="0.297008547008547" />
       </map>
     </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="com.google.gson.annotations.Expose" />
+    </list>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
