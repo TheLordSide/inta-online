@@ -9,7 +9,7 @@ class ApiClient {
     fun getretrofit(): Retrofit {
         val gson = GsonBuilder().setLenient().create()
         return  Retrofit.Builder()
-            .baseUrl("http://192.168.1.70/api/")
+            .baseUrl("http://192.168.1.75/api/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
 

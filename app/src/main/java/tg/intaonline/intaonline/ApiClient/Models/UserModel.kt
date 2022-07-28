@@ -1,4 +1,4 @@
-package tg.intaonline.intaonline.ApiClient
+package tg.intaonline.intaonline.ApiClient.Models
 
 class UserModel {
     data class UserCLass(

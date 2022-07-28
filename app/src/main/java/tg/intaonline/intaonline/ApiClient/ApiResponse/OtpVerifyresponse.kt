@@ -3,8 +3,7 @@ package tg.intaonline.intaonline.ApiClient.ApiResponse
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class RegisterResponse {
-
+class OtpVerifyresponse {
     @SerializedName("success")
     @Expose
     val success : String? = null
@@ -12,11 +11,5 @@ class RegisterResponse {
     @SerializedName("message")
     @Expose
     val message : String? = null
-
-    @SerializedName("email")
-    @Expose
-    val email : String? = null
-
-
 
 }

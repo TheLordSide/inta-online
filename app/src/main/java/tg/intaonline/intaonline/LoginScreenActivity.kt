@@ -1,5 +1,6 @@
 package tg.intaonline.intaonline
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,7 +11,7 @@ import com.google.android.material.textfield.TextInputLayout
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import tg.intaonline.intaonline.ApiClient.ApiInterface
+import tg.intaonline.intaonline.ApiClient.service.ApiInterface
 import tg.intaonline.intaonline.ApiClient.ApiRequest.LoginRequest
 import tg.intaonline.intaonline.ApiClient.ApiResponse.LoginResponse
 import tg.intaonline.intaonline.ApiClient.service.ApiClient
@@ -23,7 +24,14 @@ class LoginScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_screen)
         val connectbtn = findViewById<Button>(R.id.Connexion)
+        val registerbtn = findViewById<Button>(R.id.Inscription)
 
+
+      registerbtn.setOnClickListener{
+        val itent = Intent(this,RegisterScreenActivity::class.java)
+          startActivity(itent)
+          finish()
+      }
 
       connectbtn.setOnClickListener{
       //  val itent = Intent(this,MainActivity::class.java)
@@ -66,12 +74,18 @@ class LoginScreenActivity : AppCompatActivity() {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
 
                 val message = response.body()?.message
+                val success = response.body()?.success
                 if(response.isSuccessful){
-                   // val itent = Intent(applicationContext,MainActivity::class.java)
-                     //   startActivity(itent)
-                    Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_SHORT).show()
-                }
-                else{
+                    if(success=="true"){
+                        val intent = Intent(applicationContext,MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                        Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_SHORT).show()
+                    }
+                    else{
+                        Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_SHORT).show()
+                    }
+
                 }
 
             }

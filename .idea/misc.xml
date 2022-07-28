@@ -10,9 +10,12 @@
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_main_dialog_categories.xml" value="0.26375282592313487" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_optverify.xml" value="0.29713552800342025" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_register_screen.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/grid_layout.xml" value="0.22" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/linear_horizontal_login.xml" value="0.25" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/linear_horizontal_register.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/mainactivitygridview_items.xml" value="0.297008547008547" />
       </map>
     </option>

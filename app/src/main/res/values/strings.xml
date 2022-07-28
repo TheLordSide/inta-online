@@ -4,7 +4,13 @@
     <string name="Requis">Champs requis*</string>
     <string name="Mdp">Mot de passe</string>
     <string name="Title">Bienvenue</string>
+    <string name="Title2">Inscription</string>
     <string name="Login">Connexion</string>
     <string name="Signup">Inscription</string>
     <string name="Categorie">Nos catégories</string>
+    <string name="Name">Nom</string>
+    <string name="Prenom">Prénom</string>
+    <string name="OTP">entrez le code de vérification</string>
+    <string name="OTPconfirmed">Confirmation</string>
+    <string name="ConfirmedPassword">Confirmez mot de passe</string>
 </resources>
