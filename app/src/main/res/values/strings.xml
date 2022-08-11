@@ -12,5 +12,6 @@
     <string name="Prenom">Prénom</string>
     <string name="OTP">entrez le code de vérification</string>
     <string name="OTPconfirmed">Confirmation</string>
+    <string name="RechercherUnCours">Rechercher un cours</string>
     <string name="ConfirmedPassword">Confirmez mot de passe</string>
 </resources>

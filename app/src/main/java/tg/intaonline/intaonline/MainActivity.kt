@@ -1,9 +1,12 @@
 package tg.intaonline.intaonline
 
+import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewParent
+import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.GridView
 import android.widget.Toast
@@ -20,6 +23,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.KITKAT){
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+        }
         gridView = findViewById(R.id.ViewMenu)
         arrayList = ArrayList()
         arrayList = setDataList()
@@ -33,10 +41,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
     private fun setDataList() : ArrayList<LanguageItem>{
         var arrayList:ArrayList<LanguageItem> = ArrayList()
         arrayList.add(LanguageItem(R.drawable.ic_baseline_video_library_24, name = "Cours"))
-        arrayList.add(LanguageItem(R.drawable.ic_baseline_category_24, name = "Catégories"))
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_category_24, name = "Catalogue"))
         arrayList.add(LanguageItem(R.drawable.ic_baseline_admin_panel_settings_24, name = "Profil"))
         arrayList.add(LanguageItem(R.drawable.ic_baseline_auto_stories_24, name = "Parcours"))
-        arrayList.add(LanguageItem(R.drawable.ic_baseline_account_circle_24, name = "Compte"))
+        arrayList.add(LanguageItem(R.drawable.ic_baseline_account_circle_24, name = "Mon compte"))
         return arrayList
     }
 
@@ -44,8 +52,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
        var pos: LanguageItem =arrayList!![p2]
         var names =pos.name
         var dial = CustomDIalog()
-        if (names=="Catégories") {
-            dial.show(supportFragmentManager ,"CUstomg")
+        if (names=="Cours") {
+            val itent = Intent(this,CoursScreanActivity::class.java)
+            startActivity(itent)
         }
 
 

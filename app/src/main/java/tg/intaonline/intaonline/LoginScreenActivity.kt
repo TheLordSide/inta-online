@@ -26,17 +26,17 @@ class LoginScreenActivity : AppCompatActivity() {
         val connectbtn = findViewById<Button>(R.id.Connexion)
         val registerbtn = findViewById<Button>(R.id.Inscription)
 
-
       registerbtn.setOnClickListener{
         val itent = Intent(this,RegisterScreenActivity::class.java)
           startActivity(itent)
-          finish()
+
       }
 
       connectbtn.setOnClickListener{
       //  val itent = Intent(this,MainActivity::class.java)
       //    startActivity(itent)
           login()
+
       }
 
 

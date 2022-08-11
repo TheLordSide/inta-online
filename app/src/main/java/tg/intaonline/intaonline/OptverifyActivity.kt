@@ -30,15 +30,11 @@ class OptverifyActivity : AppCompatActivity() {
    private fun confirmation () {
         var otp = findViewById<EditText>(R.id.otpverifytext)
         var errorotp = findViewById<TextInputLayout>(R.id.OTPtext)
-
         val bundle: Bundle?=intent.extras
         val mail= bundle!!.getString("messagetopasse")
-        print("valglo: ${mail}\n")
-
         val request= OtpVerifyRequest()
         request.otp = otp.text.toString().trim()
         request.email=mail
-        print("valglo: ${request.email}\n")
         val api = ApiClient().getretrofit().create(ApiInterface::class.java)
         api.otpverify(request.email,request.otp).enqueue(object : Callback<OtpVerifyresponse> {
             override fun onResponse(
@@ -56,6 +52,7 @@ class OptverifyActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                         Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_LONG).show()
+
                     }
                     else{
                         Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_LONG).show()

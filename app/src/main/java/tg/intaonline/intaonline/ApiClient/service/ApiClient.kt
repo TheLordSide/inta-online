@@ -9,9 +9,8 @@ class ApiClient {
     fun getretrofit(): Retrofit {
         val gson = GsonBuilder().setLenient().create()
         return  Retrofit.Builder()
-            .baseUrl("http://192.168.1.75/api/")
+            .baseUrl("https://apiintaonline.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
-
     }
 }
