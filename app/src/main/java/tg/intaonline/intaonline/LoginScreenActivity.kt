@@ -79,7 +79,6 @@ class LoginScreenActivity : AppCompatActivity() {
                     if(success=="true"){
                         val intent = Intent(applicationContext,MainActivity::class.java)
                         startActivity(intent)
-                        finish()
                         Toast.makeText(applicationContext,message.toString(),Toast.LENGTH_SHORT).show()
                     }
                     else{

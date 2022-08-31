@@ -5,13 +5,10 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.ViewParent
 import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.GridView
-import android.widget.Toast
 import tg.intaonline.intaonline.Adaptater.AdaptateurGrid
-import tg.intaonline.intaonline.CustomClass.CustomDIalog
 import tg.intaonline.intaonline.Model.LanguageItem
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
@@ -51,10 +48,9 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener{
     override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
        var pos: LanguageItem =arrayList!![p2]
         var names =pos.name
-        var dial = CustomDIalog()
         if (names=="Cours") {
-            val itent = Intent(this,CoursScreanActivity::class.java)
-            startActivity(itent)
+            val intent = Intent(applicationContext,CoursList::class.java)
+            startActivity(intent)
         }
 
 

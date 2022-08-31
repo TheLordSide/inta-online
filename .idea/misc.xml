@@ -8,6 +8,8 @@
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1525" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2125" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_account_settings.xml" value="0.15433946130825138" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_cours.xml" value="0.25" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_cours_list.xml" value="0.29713552800342025" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_cours_screan.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_login_screen.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -15,10 +17,13 @@
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_optverify.xml" value="0.29713552800342025" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_register_screen.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/cours_items.xml" value="0.3609375" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/grid_layout.xml" value="0.22" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/item_cours_list.xml" value="0.33" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/linear_horizontal_login.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/linear_horizontal_register.xml" value="0.25" />
         <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/mainactivitygridview_items.xml" value="0.297008547008547" />
+        <entry key="..\:/Projets/Kotlin/intaonline/app/src/main/res/layout/recyclerview_row.xml" value="0.29628046173578454" />
       </map>
     </option>
   </component>

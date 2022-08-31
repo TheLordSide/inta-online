@@ -3,10 +3,9 @@ package tg.intaonline.intaonline.ApiClient.service
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
 import retrofit2.http.POST
-import tg.intaonline.intaonline.ApiClient.ApiResponse.LoginResponse
-import tg.intaonline.intaonline.ApiClient.ApiResponse.OtpVerifyresponse
-import tg.intaonline.intaonline.ApiClient.ApiResponse.RegisterResponse
+import tg.intaonline.intaonline.ApiClient.ApiResponse.*
 
 
 interface ApiInterface {
@@ -32,6 +31,12 @@ interface ApiInterface {
             @Field("compte_user_mail") email: String?,
             @Field("otp") otp: String?
         ): Call<OtpVerifyresponse>
+
+         @GET("cours/cours.php")
+         fun getcours(): Call<CoursRes>
+
+
+
 
 
 

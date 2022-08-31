@@ -18,6 +18,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".CoursList"
+            android:exported="false" />
+        <activity
+            android:name=".CoursActivity"
+            android:exported="false" />
+        <activity
             android:name=".CoursScreanActivity"
             android:exported="false" />
         <activity
