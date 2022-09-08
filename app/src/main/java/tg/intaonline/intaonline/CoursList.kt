@@ -28,15 +28,28 @@ class CoursList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cours_list)
+
+        val actionbar = supportActionBar
+        //set actionbar title
+        actionbar!!.title = "Cours"
+        //set back button
+        actionbar.setDisplayHomeAsUpEnabled(true)
+
+
         recyclerView = findViewById(R.id.recycler_cours)
 
         //setting up the adapter
-      adapter= AdapterCours(dataList,this)
-
+        adapter= AdapterCours(dataList,this)
+        recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager= LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         recyclerView.adapter=adapter
         getData()
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun getData() {
@@ -44,7 +57,7 @@ class CoursList : AppCompatActivity() {
 
         api.getcours()?.enqueue(object : Callback<CoursRes> {
             override fun onResponse(call: Call<CoursRes>, response: Response<CoursRes>) {
-
+                val retour = response.body()?.liste
                 val message = response.body()?.message
                 val success = response.body()?.success
                 if(response.isSuccessful){

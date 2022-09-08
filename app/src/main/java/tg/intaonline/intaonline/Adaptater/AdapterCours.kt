@@ -20,6 +20,7 @@ class AdapterCours(private var dataList : ArrayList<Liste>, private val context:
      val cours = dataList[position]
         holder.courstitle.text = cours.cours_nom
         holder.coursdesc.text = cours.cours_description
+        holder.coursh.text = cours.cours_volumeh
     }
 
     override fun getItemCount(): Int {
@@ -29,10 +30,12 @@ class AdapterCours(private var dataList : ArrayList<Liste>, private val context:
     class ViewHolder(itemLayoutView: View):RecyclerView.ViewHolder(itemLayoutView) {
          var courstitle: TextView
          var coursdesc : TextView
+         var coursh : TextView
 
         init {
             courstitle=itemLayoutView.findViewById(R.id.titleHolder)
             coursdesc=itemLayoutView.findViewById(R.id.descHolder)
+            coursh=itemLayoutView.findViewById(R.id.VolumeHolder)
         }
     }
 }

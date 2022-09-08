@@ -3,45 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    app:cardElevation="5dp"
-    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="7dp"
     app:cardUseCompatPadding="true"
     app:cardPreventCornerOverlap="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001"
-        tools:layout_editor_absoluteX="10dp">
-        <TextView
-            android:id="@+id/titleHolder"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CoursTitlePlaceholder"
-            android:textStyle="bold"
-            android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageHold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/descHolder"
-            android:layout_width="match_parent"
+            android:id="@+id/titleHolder"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="DescHolderPlaceholder"
+            android:layout_marginLeft="10dp"
+            android:text="CoursTitlePlaceholder"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/titleHolder" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageHold"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/descHolder"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="VolumeHolder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageHold"
+            app:layout_constraintTop_toBottomOf="@id/titleHolder"/>
 
         <TextView
             android:id="@+id/VolumeHolder"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:text="VolumeHolder"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/descHolder" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageHold"
+            app:layout_constraintTop_toBottomOf="@id/descHolder"/>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.cardview.widget.CardView>
